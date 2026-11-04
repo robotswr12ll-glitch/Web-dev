@@ -273,6 +273,8 @@
       opacity:0;transition:.3s;
     }
     .work-card:hover .thumb::after{opacity:1}
+    .work-card .thumb:has(img){padding:0}
+    .work-card .thumb img{width:100%;height:100%;object-fit:cover;display:block}
     .t1{background:linear-gradient(140deg,#12332a,#0d1f1a)}
     .t2{background:linear-gradient(140deg,#1a2a33,#101a1f)}
     .t3{background:linear-gradient(140deg,#2a2333,#171220)}
@@ -490,7 +492,7 @@
   </div>
   <div class="grid" id="workGrid">
     <div class="card work-card tilt reveal" data-cat="app">
-      <div class="thumb t1">Quiz app<br>JavaScript + Firebase</div>
+      <div class="thumb"><img src="photo1.png" alt="Epiphany Crash preview" /></div>
       <h3>Epiphany Crash</h3>
       <ul>
         <li>Personality / attachment-style quiz with user authentication and real-time data storage.</li>
@@ -503,14 +505,14 @@
     </div>
 
     <div class="card work-card tilt reveal" data-cat="site">
-      <div class="thumb t2">Restaurant site<br>Plain HTML / CSS / JS</div>
-      <h3>Opa Kebab</h3>
+      <div class="thumb"><img src="photo2.png" alt="Kurasu Kyoto preview" /></div>
+      <h3>Kurasu Kyoto</h3>
       <ul>
-        <li>Full rebuild of a restaurant website — no frameworks, just clean hand-written code.</li>
-        <li>Deployed on Vercel with a fast, mobile-friendly layout.</li>
+        <li>Landing page designed to be clean, fast, and easy to scan.</li>
+        <li>Deployed on Vercel with a mobile-friendly layout.</li>
       </ul>
       <div class="links">
-        <span style="font-family:var(--mono);font-size:.75rem;color:var(--muted)">Link available on request</span>
+        <a href="https://kurasu-kyot0-template.vercel.app/" target="_blank" rel="noreferrer">Live site <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
       </div>
     </div>
 
